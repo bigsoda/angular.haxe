@@ -14,7 +14,7 @@ typedef ScopeEvent = {
 }
 
 @:injectionName("$scope")
-extern class Scope
+extern class Scope implements Dynamic
 {
 	@:overload(function ():Void {}) // ?? not sure
 	@:overload(function (f:Void->Void):Void {})
